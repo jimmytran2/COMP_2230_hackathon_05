@@ -1,4 +1,4 @@
-// const userInputNode = document.querySelector("#userInput");
+// const userInput = document.querySelector("#pokemon-input");
 // const pokemonId = userInputNode.value;
 const url = `https://pokeapi.co/api/v2/pokemon/5/`
 
