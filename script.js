@@ -14,12 +14,12 @@ async function miniPokedex(){
         const { id, name, types, sprites:{front_default} } = pokemon;
  
         let type1 = types[0].type.name;
-        let type2 = types.length > 1 ? types[1].type.name : null;
+        let type2 = types.length > 1 ? types[1].type.name : null; //checks if pokemon has only one type
         console.log(id);
         console.log(name);
         console.log(type1);
         console.log(type2);
-        console.log(front_default);
+        console.log(front_default); //pokemon sprite
         
         const pokemonInfo = [];
         pokemonInfo.push(id, name, type1, type2, front_default);
