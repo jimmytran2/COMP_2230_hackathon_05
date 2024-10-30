@@ -8,7 +8,7 @@
 
 -   Jimmy Tran
 -   Name 2
--   Name 3
+-   Mackinley Wanless
 
 ## Member Contributions:
 
