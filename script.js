@@ -1,4 +1,4 @@
-// const userInputNode = document.querySelector("#userInput");
+// const userInput = document.querySelector("#pokemon-input");
 // const pokemonId = userInputNode.value;
 const url = `https://pokeapi.co/api/v2/pokemon/5/`
 
@@ -11,7 +11,7 @@ async function miniPokedex(){
         const pokemon = await response.json();
         console.log(pokemon);
 
-        const { id, name, types } = pokemon;
+        const { id, name, types, sprites:{front_default} } = pokemon;
  
         let type1 = types[0].type.name;
         let type2 = types.length > 1 ? types[1].type.name : null;
@@ -19,6 +19,11 @@ async function miniPokedex(){
         console.log(name);
         console.log(type1);
         console.log(type2);
+        console.log(front_default);
+        
+        const pokemonInfo = [];
+        pokemonInfo.push(id, name, type1, type2, front_default);
+        return pokemonInfo
 
     } catch (error){
         console.error(error);
@@ -26,3 +31,9 @@ async function miniPokedex(){
 }
 
 miniPokedex();
+
+async function displayPokemon(){
+    const pokemonInfo = await miniPokedex();
+    
+    
+}
