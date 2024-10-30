@@ -26,3 +26,8 @@ async function miniPokedex(){
 }
 
 miniPokedex();
+
+async function displayPokemon(){
+    const pokemonStuff = await miniPokedex();
+    
+}
