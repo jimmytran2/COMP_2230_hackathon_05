@@ -6,15 +6,15 @@
 
 ## Team Members:
 
--   Name 1
+-   Jimmy Tran
 -   Name 2
 -   Mackinley Wanless
 
 ## Member Contributions:
 
-### Name 1:
+### Name 1: Jimmy Tran
 
--   Worked on [specific elements] of the webpage.
+-   api fetch request, destructuring
 
 ### Name 2:
 
