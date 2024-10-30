@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Quote Styling */
+  .quote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .author {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Loading Spinner */
+  .loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top-color: blue;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Show loading spinner when fetching quotes */
+  .loading.active {
+    display: block;
+  }
+  
