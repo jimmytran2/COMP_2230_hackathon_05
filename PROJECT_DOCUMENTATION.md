@@ -22,4 +22,4 @@
 
 ### Name 3:
 
--   Handled [specific sections], covering [specific topics or features].
+-   Created css, assisted with javascript and html
