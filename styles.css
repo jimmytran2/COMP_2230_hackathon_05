@@ -68,6 +68,19 @@ body {
     height: 40px;
     animation: spin 1s linear infinite;
   }
+
+  img{
+    width: 100%;
+    max-width: 200px;
+  }
+
+  p{
+    background-color: white;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 5%;
+    text-align: center;
+  }
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
