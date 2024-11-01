@@ -1,8 +1,13 @@
-// const userInput = document.querySelector("#pokemon-input");
-// const pokemonId = userInputNode.value;
-const url = `https://pokeapi.co/api/v2/pokemon/5/`
+const userInputNode = document.querySelector("#pokemon-input");
+const spriteContainer = document.querySelector("#sprite");
+const infoNode = document.querySelector("#info");
+
+
 
 async function miniPokedex(){
+    const pokemonId = userInputNode.value;
+
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}/`
     try{
         const response = await fetch(url);
         if(!response.ok){
@@ -30,10 +35,33 @@ async function miniPokedex(){
     }
 }
 
-miniPokedex();
+// miniPokedex();
 
 async function displayPokemon(){
+
+    spriteContainer.textContent = "";
+    infoNode.textContent = "";
+
     const pokemonInfo = await miniPokedex();
-    
-    
+    const [id, name, type1, type2, front_default] = pokemonInfo;
+
+    const photoNode = document.createElement("img");
+    photoNode.src = front_default;
+    spriteContainer.appendChild(photoNode);
+
+    const pokeId = document.createElement("p");
+    pokeId.textContent = `Pokedex Entry #${id};`
+    infoNode.appendChild(pokeId);
+
+    const nameId = document.createElement("p");
+    nameId.textContent = name
+    infoNode.appendChild(nameId);
+
+    const typeId1 = document.createElement("p");
+    typeId1.textContent = `Type: ${type1}${type2 ? ` / ${type2}` : ''}`//checks if there is second type to display second type
+    infoNode.appendChild(typeId1);
+
+    console.log(pokemonInfo);
+
+
 }

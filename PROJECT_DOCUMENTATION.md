@@ -7,19 +7,19 @@
 ## Team Members:
 
 -   Jimmy Tran
--   Name 2
+-   Ian Hamm
 -   Mackinley Wanless
 
 ## Member Contributions:
 
 ### Name 1: Jimmy Tran
 
--   api fetch request, destructuring
+-   api fetch request, destructuring, some html elements, display function
 
-### Name 2:
+### Name 2: Ian Hamm
 
--   Was responsible for [specific tasks], focusing on [specific HTML elements].
+-   assisted with js, html, and debugging/testing
 
-### Name 3:
+### Name 3: Mackinley Wanless
 
 -   Created css, assisted with javascript and html
