@@ -20,6 +20,6 @@
 
 -   assisted with js, html, and debugging/testing
 
-### Name 3:
+### Name 3: Mackinley Wanless
 
 -   Created css, assisted with javascript and html
