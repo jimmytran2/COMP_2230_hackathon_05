@@ -58,12 +58,8 @@ async function displayPokemon(){
     infoNode.appendChild(nameId);
 
     const typeId1 = document.createElement("p");
-    typeId1.textContent = `Type: ${type1}`
+    typeId1.textContent = `Type: ${type1}${type2 ? ` / ${type2}` : ''}`//checks if there is second type to display second type
     infoNode.appendChild(typeId1);
-
-    const typeId2 = document.createElement("p");
-    typeId2.textContent = `Type: ${type2}`
-    infoNode.appendChild(typeId2);
 
     console.log(pokemonInfo);
 
