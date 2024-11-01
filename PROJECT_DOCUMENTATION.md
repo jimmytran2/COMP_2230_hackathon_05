@@ -14,7 +14,7 @@
 
 ### Name 1: Jimmy Tran
 
--   api fetch request, destructuring, some html elements
+-   api fetch request, destructuring, some html elements, display function
 
 ### Name 2:
 
